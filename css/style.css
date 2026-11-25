@@ -1,0 +1,29 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body { font-family: Arial, sans-serif; line-height: 1.6; color: #222; }
+
+header { background: #1a3a5f; padding: 1rem; }
+nav { display: flex; flex-direction: column; gap: 1rem; align-items: center; }
+nav .logo { color: white; font-size: 1.5rem; font-weight: bold; text-decoration: none; }
+nav ul { display: flex; gap: 1rem; list-style: none; flex-wrap: wrap; justify-content: center; }
+nav ul a { color: white; text-decoration: none; }
+
+section { padding: 2rem 1rem; max-width: 1100px; margin: 0 auto; }
+#apresentacao { text-align: center; background: #f0f4f8; }
+#apresentacao img { width: 150px; height: 150px; border-radius: 50%; object-fit: cover; }
+#apresentacao a { display: inline-block; margin-top: 1rem; background: #1a3a5f; color: white; padding: 0.8rem 1.5rem; text-decoration: none; border-radius: 8px; }
+
+h2 { margin-bottom: 1rem; color: #1a3a5f; }
+article { background: #f9f9f9; padding: 1rem; border-radius: 8px; margin-bottom: 1rem; }
+#habilidades ul, #contato ul { list-style: none; display: flex; flex-wrap: wrap; gap: 0.7rem; }
+#habilidades li { background: #e0eaf5; padding: 0.5rem 1rem; border-radius: 20px; }
+
+footer { background: #1a3a5f; color: white; text-align: center; padding: 1rem; }
+
+/* DESKTOP - a partir de 768px */
+@media (min-width: 768px) {
+    nav { flex-direction: row; justify-content: space-between; max-width: 1100px; margin: 0 auto; }
+    #apresentacao img { width: 200px; height: 200px; }
+    #disciplinas { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 1rem; }
+    #disciplinas h2 { grid-column: 1 / -1; }
+}
